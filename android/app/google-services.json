@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "958302380050",
+    "firebase_url": "https://movizz-471fe.firebaseio.com",
+    "project_id": "movizz-471fe",
+    "storage_bucket": "movizz-471fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958302380050:android:2a6c45c5eeec6b3da5b8cb",
+        "android_client_info": {
+          "package_name": "com.madproject.movizz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958302380050-8f16nupaa8j8231pmvnc40vh7alpgs8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF7EqRNSgHVZiQHrjvOMTjPNVsNfAT9aA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958302380050-8f16nupaa8j8231pmvnc40vh7alpgs8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-3799016640529761~5666720498"
+    }
+  ],
+  "configuration_version": "1"
+}

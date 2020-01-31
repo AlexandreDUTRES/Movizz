@@ -8,3 +8,4 @@ Disponible sur Android et iOS :
 - App Store : https://apps.apple.com/us/app/movizz-explorateur-de-films/id1484274114?l=fr&ls=1
 
 Merci de vous référer à la formation disponible sur Udemy pour plus d'informations.
+https://www.udemy.com/course/creez-des-applications-android-ios-avec-flutter/?referralCode=126A698161E4E592F319

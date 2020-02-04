@@ -20,6 +20,9 @@ import 'custom_librairies/Ads.dart';
 //flutter create --org com.yourdomain appname
 
 void main() async {
+  //correction new Flutter version
+  WidgetsFlutterBinding.ensureInitialized();
+  
   //init admob ads
   await initAppAds();
   // Initializes the translation module

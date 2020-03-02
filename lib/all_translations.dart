@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:ui';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:devicelocale/devicelocale.dart';
 
 ///
 /// Preferences related
@@ -43,10 +44,30 @@ class GlobalTranslations {
   /// One-time initialization
   /// 
   Future<Null> init([String language]) async {
-    if (_locale == null){
+    String userLang = await getPreferredLanguage();
+    if (userLang == "") {
+      String deviceLang = await Devicelocale.currentLocale;
+      deviceLang = deviceLang.split("_")[0];
+
+      List<Locale> supportedLocales =
+          allTranslations.supportedLocales().toList();
+      bool isSupported = false;
+
+      for (int i = 0; i < supportedLocales.toList().length; i++) {
+        if (supportedLocales.toList()[i].languageCode == deviceLang) {
+          isSupported = true;
+          break;
+        }
+      }
+
+      if (isSupported)
+        await setNewLanguage(deviceLang);
+      else
+        await setNewLanguage(language);
+    }
+    else {
       await setNewLanguage(language);
     }
-    return null;
   }
 
   /// ----------------------------------------------------------
